@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Just Save It</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./js/controller.js" defer></script>
+    <script src="./js/view.js" defer></script>
+  </head>
+
+  <body>
+    <header>
+      <h1 class="header">Please, Just Save It!</h1>
+    </header>
+
+    <div class="app">
+
+
+      <div class="report">
+        <div class="balance-report">
+          <div class="balance-header" id="balanceTotal">R100</div>
+          <div class="bal">Balance</div>
+        </div> 
+        <div class="income-report">
+          <div class="balance-header" id="incomeTotal">R100</div>
+          <div >Debit</div>
+        </div>
+        <div class="expense-report">
+          <div class="balance-header" id="expenseTotal">R100</div>
+          <div class="bal">(Credit)</div>
+        </div>
+      </div>
+
+
+      <div class="box">
+
+        <div class="adding">
+          <input
+            type="text"
+            id="txtDetail"
+            class="form-control"
+            placeholder="Transaction Description"/>
+          <label for="text" class="control-label">Transaction Description</label><p class="p">.</p>
+        </div>
+
+        <div class="adding">
+          <input
+            type="number"
+            id="txtAmount"
+            class="form-control"
+            placeholder="Amount"/>
+          <label for="text" class="control-label">Amount</label><p class="p">.</p>
+        </div>
+
+        <div class="box2">
+          <select id="txtType">
+            <option value="credit">(Credit)</option>
+            <option value="debit">Debit</option>
+          </select>
+          <button onclick="add_dataFn()">ADD TRANSACTION</button>
+        </div>
+
+      </div>
+      
+      
+
+      <div class="all-transaction" id="allTransaction">
+      <div class="transactionInc income-b">
+        <div class="detail">Salary</div>
+        <div class="amount">R100</div>
+        <div class="action"></div>
+        <div><i class="bounce bi bi-trash"></i></div>
+      </div>
+
+      <div class="transactionExp expense-b">
+        <div class="detail">Rent</div>
+        <div class="amount">(R100)</div>
+        <div class="action"></div>
+        <i class="bounce bi bi-trash"></i>
+      </div>
+
+      <div class="transaction income-b">
+        <div class="detail">Salary</div>
+        <div class="amount">R100</div>
+        <div class="action"></div>
+        <i class="bounce bi bi-trash"></i>
+      </div>
+    </div>
+
+    </div>
+
+
+    
+
+
+  </body>
+</html>
